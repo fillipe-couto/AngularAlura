@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-criar-pensamento',
   templateUrl: './criar-pensamento.component.html',
   styleUrl: './criar-pensamento.component.css'
 })
-export class CriarPensamentoComponent {
+export class CriarPensamentoComponent implements OnInit {
 
   pensamento = {
     id: '1',
@@ -14,12 +16,18 @@ export class CriarPensamentoComponent {
     modelo: ''
   }
 
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    alert("Criando novo pensamento...");
+  }
+
   criarNovoPensamento() {
     alert("Novo pensamento!")
   }
 
   cancelarNovoPensamento() {
-    alert("Novo pensamento cancelado!")
+    this.router.navigate(["/listarPensamentos"]);
   }
 
 }

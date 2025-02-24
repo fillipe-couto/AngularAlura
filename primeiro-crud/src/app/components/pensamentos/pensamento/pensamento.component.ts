@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Pensamento } from '../Pensamento';
 
 @Component({
   selector: 'app-pensamento',
@@ -7,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class PensamentoComponent {
 
-  @Input() pensamento = {conteudo: "", autoria: "", modelo: ""};
+  @Input() pensamento: Pensamento = {id: 0, conteudo: "", autoria: "", modelo: ""};
 
   larguraPensamento(): string {
     if(this.pensamento.conteudo.length >= 256) return "pensamento-g";

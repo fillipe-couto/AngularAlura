@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Pensamento } from '../Pensamento';
 
 
 @Component({
@@ -9,8 +10,8 @@ import { Router } from '@angular/router';
 })
 export class CriarPensamentoComponent implements OnInit {
 
-  pensamento = {
-    id: '1',
+  pensamento: Pensamento = {
+    id: 0,
     conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
     modelo: ''

@@ -19,7 +19,8 @@
 - O componente _router-outlet_ servirá como placeholder para navegação das páginas;
 - O arquivo _app-routing.module.ts_ contém a configuração das rotas da aplicação;
 - Em um objeto HTML, o atributo _routerLink_ define a nova rota quando for clicado;
-- Programaticamente, um objeto Router declarado no construtor pode navegar também com _this.router.navigate(\["/novo-endereço"\])_;
+- Programaticamente, um objeto **Router** injetado no construtor pode navegar também com _this.router.navigate(\["/novo-endereço"\])_;
+- Um objeto **ActivatedRoute** injetado no construtor pode fornecer dados adicionais da navegação, como Path ou Query Params;
 
 
 ## DIRETIVAS IMPORTANTES
@@ -39,3 +40,10 @@
 ### ngClass: altera dinamicamente classes aplicadas a um componente
 - Sintaxe padrão: \[ngClass\]="_string-com-uma-ou-mais-classes_";
 - Alternativamente, é possível habilitar/desabilitar classes condicionalmente: \[ngClass\]="{classe: _valor-booleano_}";
+
+
+## OBSERVABLES
+
+- Similar às _Promises_ em Javascript;
+- Contida na biblioteca RXJS;
+- Para requisições de sucesso, é necessário utilizar o _subscribe()_, passando a _arrow-function_ a ser executada;

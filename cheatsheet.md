@@ -47,3 +47,9 @@
 - Similar às _Promises_ em Javascript;
 - Contida na biblioteca RXJS;
 - Para requisições de sucesso, é necessário utilizar o _subscribe()_, passando a _arrow-function_ a ser executada;
+
+
+## FORMS REATIVOS
+
+- Utilização do _FormBuilder_ para criação de _FormGroups_;
+- Vinculação e validação automática/reativa em campos de formulários;

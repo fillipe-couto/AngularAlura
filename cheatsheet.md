@@ -53,3 +53,5 @@
 
 - Utilização do _FormBuilder_ para criação de _FormGroups_;
 - Vinculação e validação automática/reativa em campos de formulários;
+- Composição de verificações;
+- Variáveis de verificação para manipulação dinâmica visual (pristine, dirty, touched...);

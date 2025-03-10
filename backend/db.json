@@ -4,36 +4,42 @@
       "id": 1,
       "conteudo": "Conteudo AAA",
       "autoria": "Dev A",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 3,
       "conteudo": "Conteudo DDD",
       "autoria": "Dev D",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "conteudo": "Teste de cadastro",
       "autoria": "Teste",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 4
     },
     {
       "conteudo": "Digite um pensamento...",
       "autoria": "aaaaa",
       "modelo": "modelo1",
+      "favorito": true,
       "id": 5
     },
     {
       "conteudo": "eoiwueoiwuoiw",
       "autoria": "aaa",
       "modelo": "modelo3",
+      "favorito": true,
       "id": 6
     },
     {
       "conteudo": "aaaaaa",
       "autoria": "aaaaa",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 7
     }
   ]

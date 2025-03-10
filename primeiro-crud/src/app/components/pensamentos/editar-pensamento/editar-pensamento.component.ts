@@ -13,7 +13,8 @@ export class EditarPensamentoComponent implements OnInit {
   pensamento: Pensamento = {
     conteudo: "",
     autoria: "",
-    modelo: ""
+    modelo: "",
+    favorito: false
   }
 
   constructor(private service: PensamentoService, private router: Router, private route: ActivatedRoute) {}
